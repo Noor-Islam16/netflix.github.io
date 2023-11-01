@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-body {
+body {                                        /* Targetting Whole Body */
     font-family: Arial, Helvetica, sans-serif;
     background-color: #111;
 }
@@ -11,7 +11,7 @@ body {
 .row__poster {
     width: 100%;
     object-fit: contain;
-    max-height: 100px;
+    max-height: 200px;
     margin-right: 10px;
     transition: transform 450ms;
 }
@@ -27,13 +27,18 @@ body {
     transform: scale(1.12);
 }
 
-.row__posters::-webkit-scrollbar {
+.row__posters::-webkit-scrollbar {   /* After doing this we can hide the scroll bars which are below of the categories */
     display: none;
 }
 
 .row__posterLarge {
     width: auto;
     max-height: 100%;
+}
+
+.row__posterSmall{
+    width: auto;
+    max-height: 200px;
 }
 
 .row__posterLarge:hover {
